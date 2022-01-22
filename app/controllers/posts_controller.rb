@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-     @posts = Post.all  # すべてのレコードを@postsに代入
+     @posts = Post.all 
   end
   
   def new
@@ -8,6 +8,6 @@ class PostsController < ApplicationController
   end
   
   def create
-    Post.create(content: params[:content])
+    Post.create(content: params[:text])
   end
 end
